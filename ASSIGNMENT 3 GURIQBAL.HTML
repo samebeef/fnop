@@ -1,0 +1,47 @@
+<html>
+    <head>
+    </head>
+<body>
+<script>
+
+var secretNumber = 20;
+var x = parseInt(prompt("enter the number between 1 and 100"));
+var noOfAttempts = 10;
+    
+    while(true){
+        if (secretNumber < x){
+         noOfAttempts = noOfAttempts + 1;
+            x = parseInt(prompt("enter the number between 1 and 100"));
+        }
+          
+else if (secretNumber > x){
+         x = parseInt(prompt("Selected Number is lower than Secret Number! \n enter the number between 1 and 100"));
+         noOfAttempts = noOfAttempts + 1;
+     
+   }
+   else{
+         document.write("Congratulation!" + "<br/>")
+         document.write(x + "was the secret number." + "<br/>")
+         document.write("you found it 1n "+ noOfAttempts + "attempts" + "<br/>")
+         break; 
+      }
+}
+    </script>
+</body>
+</html>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
